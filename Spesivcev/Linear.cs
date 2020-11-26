@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-    class Linear
+namespace Spesivcev
+{
+    public class Linear : IEquationInterface
     {
         protected List<float> X;
         public List<float> Solve(float a, float b, float c)
@@ -14,3 +16,4 @@ using System.Collections.Generic;
             return X = new List<float>() { -b / a };
         }
     }
+}

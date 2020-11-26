@@ -5,26 +5,15 @@ class Program
     {
         static void Main(string[] args)
         {
-            B b new B();
-        }
+            Quadratic myQuadratic = new Quadratic();
     try
             {
-                printResult(b.Solve(2, 4));
-                printResult(b.Solve(1,-2, -3));
-                printResult(b.Solve(1,4, 4));
-                printResult(b.Solve(-2, 3));  
+                MyLog.Log("Корни уравнения: " + String.Join(" ", myQuadratic.Solve(1, -2, -3)));
             }
     catch (Exception e)
             {
-                Console.WriteLine(e.Message);
+                MyLog.Log(e.Message);
             }
-            Console.ReadKey();
-public static void printResult(List<float> result)
-      {
-        foreach (float x in result)
-            {
-                Console.Write(x + " ; ");
-            }
-            Console.WriteLine();
-      }
+            MyLog.Write();
+    }
 }

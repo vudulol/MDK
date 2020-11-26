@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 
+namespace Spesivcev
+{
     public class Quadratic : Linear
     {
         public new List<float> Solve(float a, float b, float c)
@@ -36,3 +38,4 @@ using System.Collections.Generic;
             return (float)Math.Pow(b, 2) - 4 * a * c;
         }
     }
+}
