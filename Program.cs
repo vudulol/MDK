@@ -1,36 +1,30 @@
 using System;
+using System.Collections.Generic;
 
 class Program
     {
         static void Main(string[] args)
         {
-            A a1 = new A();
-            A a2 = new A();
-            A a3 = new A();
-            B b4 = new B(a3);
-            C c6 = new C(b4, a1, a2, a3);
+            B b new B();
+        }
+    try
+            {
+                printResult(b.Solve(2, 4));
+                printResult(b.Solve(1,-2, -3));
+                printResult(b.Solve(1,4, 4));
+                printResult(b.Solve(-2, 3));  
+            }
+    catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
             Console.ReadKey();
-        }
-    }
-    class A
-    {
-
-    }
-    class B : A
-    {
-        protected object a;
-        public B(object a)
-        {
-            this.a = a;
-        }
-    }
-    class C : B
-    {
-        protected object b, c, d;
-        public C(object a, object b, object c, object d):base(a)
-        {
-            this.b = b;
-            this.c = c;
-            this.d = d;
-        }
-    }
+public static void printResult(List<float> result)
+      {
+        foreach (float x in result)
+            {
+                Console.Write(x + " ; ");
+            }
+            Console.WriteLine();
+      }
+}
