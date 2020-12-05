@@ -29,7 +29,7 @@ namespace Spesivcev
             }
             if (D < 0)
             {
-                throw new Exception("Уравнение не имеет решений.");
+                throw new SpesivcevException("Уравнение не имеет решений.");
             }
             return X;
         }

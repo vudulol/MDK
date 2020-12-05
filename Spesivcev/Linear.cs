@@ -10,7 +10,7 @@ namespace Spesivcev
         {
             if (a == 0)
             {
-                throw new Exception("Такое уравнение не существует");
+                throw new SpesivcevException("Такое уравнение не существует");
             }
             MyLog.Log("Это линейное уровнение");
             return X = new List<float>() { -b / a };
