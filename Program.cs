@@ -1,10 +1,17 @@
 using System;
+using System.IO;
 using System.Collections.Generic;
 
 class Program
     {
         static void Main(string[] args)
         {
+
+          using (StreamReader sr = new StreamReader("version"))
+                      {
+                          MyLog.Log($"Версия программы {sr.ReadToEnd().Spesivcev()}");
+                      }
+            
             Quadratic myQuadratic = new Quadratic();
 
             float a, b, c;
