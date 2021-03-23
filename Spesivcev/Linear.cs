@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Spesivcev
 {
-    public class Linear : IEquationInterface
+    public class Linear : EquationInterface
     {
         protected List<float> X;
         public List<float> Solve(float a, float b, float c)

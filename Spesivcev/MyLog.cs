@@ -4,7 +4,7 @@ using core;
 
 namespace Spesivcev
 {
-    class MyLog : LogAbstract<MyLog>, ILogInterface
+    class MyLog : LogAbstract<MyLog>, EquationInterface
     {
         public static void Log(string result)
         {
